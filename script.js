@@ -12,23 +12,28 @@ let newArray = [];
 
 startGameButton.addEventListener("click", () => {
   yourName.innerHTML = input.value;
-  selectYourLevel();
-  document.querySelector(".nameContainer").remove();
-  startTheGame();
+  if (input.value !== "") {
+    selectYourLevel();
+    document.querySelector(".nameContainer").remove();
+    startTheGame();
+  }
 });
 
 document.onkeyup = function (e) {
   if (e.key === "Enter") {
     yourName.innerHTML = input.value;
-    document.querySelector(".nameContainer").remove();
-    startTheGame();
+    if (input.value !== "") {
+      selectYourLevel();
+      document.querySelector(".nameContainer").remove();
+      startTheGame();
+    }
   }
 };
 
 function selectYourLevel() {
   let yourCurrentLevel = level.options[level.selectedIndex];
   let yourCurrentLevelText = yourCurrentLevel.textContent;
-  currentLevel.append(yourCurrentLevelText);
+  currentLevel.innerHTML = yourCurrentLevelText;
   yourCurrentLevelText === "Beginner"
     ? (tries.innerHTML = "40")
     : yourCurrentLevelText === "Immediate"
