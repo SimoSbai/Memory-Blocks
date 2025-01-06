@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Blocks</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+  </head>
+  <body>
+    <div class="nameContainer">
+      <div class="control-buttons">
+        <input type="text" class="nameField" />
+        <select name="level" id="level">
+          <option value="beginner">Beginner</option>
+          <option value="immediate">Immediate</option>
+          <option value="legend">Legend</option>
+        </select>
+        <span>Start Game</span>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="name">Hello: <span></span></div>
+      <div class="lvl"></div>
+      <div class="tries">Wrong Tries: <span>0</span></div>
+    </div>
+    <div class="memory-game-blocks">
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-angular-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="angular">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-angular-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-vuejs-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="vuejs">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-vuejs-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-css3-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="css3">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-css3-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-github-original"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="github">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-github-original"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="gulpjs">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-gulp-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="gulpjs">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-gulp-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-html5-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="html5">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-html5-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-jest-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="jest">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-jest-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-mongodb-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="mongodb">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-mongodb-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-python-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="python">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-python-plain"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-react-original"></i>
+        </div>
+      </div>
+      <div class="game-block" data-technology="react">
+        <div class="face front"></div>
+        <div class="face back">
+          <i class="devicon-react-original"></i>
+        </div>
+      </div>
+    </div>
+    <div class="popupFailedContainer">
+      <div class="fieldPopup">
+        <h2>Oops! You're out of tries</h2>
+        <span>Play Again</span>
+      </div>
+    </div>
+    <div class="popupSuccessContainer">
+      <div class="successPopup">
+        <h2>Well done! You remembered them all!</h2>
+        <span>Play Again</span>
+      </div>
+    </div>
+    <audio id="success" src="audio/success.mp4" preload="auto"></audio>
+    <audio id="fail" src="audio/fail.mp4" preload="auto"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
