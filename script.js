@@ -17,7 +17,6 @@ startGameButton.addEventListener("click", () => {
     document.querySelector(".nameContainer").remove();
     startTheGame();
   }
-  input.value !== "";
 });
 
 document.onkeyup = function (e) {
@@ -28,7 +27,6 @@ document.onkeyup = function (e) {
       document.querySelector(".nameContainer").remove();
       startTheGame();
     }
-    input.value !== "";
   }
 };
 
