@@ -187,7 +187,7 @@ function orderBoxes(event) {
 
 // Quick hint for the boxes
 function quickHint(event) {
-  let timeOut = 3;
+  let timeOut = 4;
 
   let quickHintTime = setInterval(() => {
     event.classList.add("is-flipped");
